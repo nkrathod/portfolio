@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Navbar } from "./components/navbar";
+import { Home } from "./components/home";
+import { About } from "./components/about";
+import { Services } from "./components/services";
+import { Project } from "./components/project";
+import "./App.css";
+import { Contact } from "./components/contact";
+import { Modal } from "./components/modal";
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* header */}
+      <div id="header">
+        <div className="container">
+          <Navbar />
+          <Home />
+        </div>
+      </div>
+      <i className="fa-solid fa-circle-up" onClick={() => window.location.href = '#'}></i>
+      <i className="fa-regular fa-circle-up" onClick={() => window.location.href = '#'}></i>
+      {/* about */}
+      <About />
+      {/* services */}
+      <Services />
+      {/* project */}
+      <Project />
+      {/* contact */}
+      <Contact />
     </div>
   );
 }
