@@ -20,18 +20,18 @@ const myProject = [
   },
   {
     id: 2,
+    title: "Lets Eduvate App",
+    description:
+      "Eduvate is a school management software providing integrated Curriculum for Schools, tools and resources for teachers, and classroom managment solutions.",
+    url: "https://letseduvate.com/",
+    imageUrl: letseduvateImg,
+  },
+  {
+    id: 3,
     title: "Always On Learning",
     description: "Always On Learning is the best virtual school in India.",
     url: "https://alwaysonlearning.com/",
     imageUrl: aolImg,
-  },
-  {
-    id: 3,
-    title: "Lets Eduvate App",
-    description:
-      "Eduvate is a school management software providing integrated Curriculum for Schools, tools and resources for teachers, and classroom managment solutions.",
-    url: "https://erp.letseduvate.com/",
-    imageUrl: letseduvateImg,
   },
   {
     id: 4,
