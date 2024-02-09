@@ -1,9 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Grid from "@mui/material/Grid";
-import projectImg1 from "../assets/work_1.jpg";
-import projectImg2 from "../assets/work_2.jpg";
-import projectImg3 from "../assets/work_3.jpg";
-import projectImg from "../assets/wa.png";
 import WealthyAffiliateImg from "../assets/WealthyAffiliate.webp";
 import aolImg from "../assets/aol.webp";
 import letseduvateImg from "../assets/letseduvate.png";

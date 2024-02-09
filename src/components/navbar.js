@@ -1,13 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 function NavbarComponent() {
-  const closemenu = () => {};
-  const openmenu = () => {};
+  let sidemenu = document.getElementById("sidemenu");
+  const closemenu = () => {
+    sidemenu.style.right = "-150px";
+  };
+  const openmenu = () => {
+    sidemenu.style.right = "0";
+  };
+
+  useEffect(() => {
+    sidemenu = document.getElementById("sidemenu");
+  }, [])
 
   return (
     <nav>
       <h1 className="logo">
-        <span style={{color:"#ff004f"}}>Port</span>folio
+        <span style={{ color: "#ff004f" }}>Port</span>folio
       </h1>
       <ul id="sidemenu">
         <li>

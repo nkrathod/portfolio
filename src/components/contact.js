@@ -21,7 +21,7 @@ function ContactComponent() {
                 className="tooltip"
                 title="Copy Email Id"
                 id="emailId"
-                onclick="copyText('emailId')"
+                onClick={() => console.log("copyText('emailId')")}
               >
                 nkrsoft.tech@gmail.com
               </h6>
@@ -38,7 +38,7 @@ function ContactComponent() {
                 className="tooltip"
                 title="Copy Mobile no"
                 id="mobileNo"
-                onclick="copyText('mobileNo')"
+                onClick={() => console.log("copyText('mobileNo')")}
               >
                 +91 8007800858
               </h6>
