@@ -1,18 +1,26 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b3e59b26.css",
-    "main.js": "/portfolio/static/js/main.179bf191.js",
+    "main.css": "/portfolio/static/css/main.4d0af3f6.css",
+    "main.js": "/portfolio/static/js/main.e15b20d6.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
+    "static/media/work_2.jpg": "/portfolio/static/media/work_2.56d42dabb60aac03f42f.jpg",
+    "static/media/work_3.jpg": "/portfolio/static/media/work_3.30a4b43a1459b49ec5c7.jpg",
+    "static/media/work_1.jpg": "/portfolio/static/media/work_1.886665a291d6e4056001.jpg",
     "static/media/nkrMobile.png": "/portfolio/static/media/nkrMobile.7be6742a3dff4d9d65e6.png",
     "static/media/sitbg1.png": "/portfolio/static/media/sitbg1.4587e4cf44c3bb4ff321.png",
+    "static/media/letseduvate.png": "/portfolio/static/media/letseduvate.9765f40d7bd397bdb673.png",
+    "static/media/wa.png": "/portfolio/static/media/wa.811b506fa5be056ac283.png",
     "static/media/ProfilePic.JPG": "/portfolio/static/media/ProfilePic.418f5e0d68d060715724.JPG",
+    "static/media/WealthyAffiliate.webp": "/portfolio/static/media/WealthyAffiliate.262bfc08993e87dea515.webp",
+    "static/media/sparklebox.jpg": "/portfolio/static/media/sparklebox.0d0b302fd3babc54c58b.jpg",
+    "static/media/aol.webp": "/portfolio/static/media/aol.332e09d51a5267764841.webp",
     "index.html": "/portfolio/index.html",
-    "main.b3e59b26.css.map": "/portfolio/static/css/main.b3e59b26.css.map",
-    "main.179bf191.js.map": "/portfolio/static/js/main.179bf191.js.map",
+    "main.4d0af3f6.css.map": "/portfolio/static/css/main.4d0af3f6.css.map",
+    "main.e15b20d6.js.map": "/portfolio/static/js/main.e15b20d6.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b3e59b26.css",
-    "static/js/main.179bf191.js"
+    "static/css/main.4d0af3f6.css",
+    "static/js/main.e15b20d6.js"
   ]
 }
