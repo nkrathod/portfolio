@@ -1,6 +1,9 @@
 import React from "react";
 
 function NavbarComponent() {
+  const closemenu = () => {};
+  const openmenu = () => {};
+
   return (
     <nav>
       <h1 className="logo">
@@ -25,9 +28,9 @@ function NavbarComponent() {
         <li>
           <a href="#contact">Contact</a>
         </li>
-        <i className="fa-solid fa-xmark" onclick="closemenu()"></i>
+        <i className="fa-solid fa-xmark" onClick={() => closemenu()}></i>
       </ul>
-      <i className="fa-sharp fa-solid fa-bars" onclick="openmenu()"></i>
+      <i className="fa-sharp fa-solid fa-bars" onClick={() => openmenu()}></i>
     </nav>
   );
 }
