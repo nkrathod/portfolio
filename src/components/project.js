@@ -58,7 +58,7 @@ function ProjectComponent() {
           {myProject.slice(0, project).map((project) => (
             <Grid item xs={12} md={4}>
               <div className="work">
-                <img src={project.imageUrl} alt={project.title}/>
+                <img src={project.imageUrl} alt={project.title} />
                 <div className="layer">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
@@ -71,17 +71,11 @@ function ProjectComponent() {
           ))}
         </Grid>
         {project === 3 ? (
-          <button
-            className="more-btn"
-            onClick={() => showMore()}
-          >
+          <button className="more-btn" onClick={() => showMore()}>
             Show more
           </button>
         ) : (
-          <button
-            className="more-btn"
-            onClick={() => showLess()}
-          >
+          <button className="more-btn" onClick={() => showLess()}>
             Show Less
           </button>
         )}

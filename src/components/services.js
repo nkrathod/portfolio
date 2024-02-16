@@ -56,12 +56,12 @@ function ServicesComponenet() {
   const handleModalClose = () => {
     setModalOpen(false);
     setModalData({});
-  }
+  };
 
   const handleModalOpen = (data) => {
     setModalData(data);
     setModalOpen(true);
-  }
+  };
   return (
     <div id="services">
       <div className="container">
@@ -70,7 +70,11 @@ function ServicesComponenet() {
         </h1>
         <div className="services-list">
           {servicesList.map((item) => (
-            <div id={item.serviceId} key={item.id} onClick={() => handleModalOpen(item)}>
+            <div
+              id={item.serviceId}
+              key={item.id}
+              onClick={() => handleModalOpen(item)}
+            >
               <i className={item.serviceIcon}></i>
               <h2>{item.serviceTitle}</h2>
               <p>{item.discription}</p>
@@ -79,7 +83,13 @@ function ServicesComponenet() {
           ))}
         </div>
       </div>
-      {isModalOpen && (<Modal isModalOpen={isModalOpen} data={modalData} handleModalClose={handleModalClose}/>)}
+      {isModalOpen && (
+        <Modal
+          isModalOpen={isModalOpen}
+          data={modalData}
+          handleModalClose={handleModalClose}
+        />
+      )}
     </div>
   );
 }
