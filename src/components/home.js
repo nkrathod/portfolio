@@ -1,4 +1,5 @@
 import React from "react";
+import ResumePDF from "../assets/Nitesh_Software_Dev.pdf";
 
 function HomeComponent() {
   return (
@@ -11,7 +12,13 @@ function HomeComponent() {
         <br />
         Rathod From Pune, <span>India</span>
       </h1>
-      <a href="Nitesh_Software_Engineer.pdf" download className="more-btn btn2">
+      <a
+        href={ResumePDF}
+        rel="noreferrer"
+        target="_blank"
+        download
+        className="more-btn btn2"
+      >
         Download CV <i className="fa-solid fa-cloud-arrow-down"></i>
       </a>
     </div>
