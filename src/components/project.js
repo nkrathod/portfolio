@@ -55,8 +55,8 @@ function ProjectComponent() {
           My <span>Project</span>
         </h1>
         <Grid container spacing={2} className="work-list">
-          {myProject.slice(0, project).map((project) => (
-            <Grid item xs={12} md={4}>
+          {myProject.slice(0, project).map((project, i) => (
+            <Grid item xs={12} md={4} key={i}>
               <div className="work">
                 <img src={project.imageUrl} alt={project.title} />
                 <div className="layer">

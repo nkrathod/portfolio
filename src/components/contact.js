@@ -1,6 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ContactComponent() {
+  const [resMsg, setResMsg] = useState('');
+  const [resMsgClr, setResMsgClr] = useState('');
+
+  const handleSubmit = async () => {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMJxEdpNVXE6OO0SRV1qmZNLglxuCrhiS8HrQ4jJwWXnkpdN4dxDKWJ3trjz94tSrjpA/exec';
+    const form = document.forms['submit-to-google-sheet'];
+
+    await fetch(scriptURL, {method: 'POST', body: new FormData(form)})
+        .then(response => {
+          setResMsgClr('#61b752');
+          setResMsg("Message sent successfully..! Thank you for contacting me..!")
+          setTimeout(() => {
+            setResMsg("")
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => {
+          setResMsgClr('#ff004f');
+          setResMsg("Something went wrong try again later..!")
+          setTimeout(() => {
+            setResMsg("")
+          }, 5000)
+        })
+  }
+
   return (
     <div id="contact">
       <div className="container">
@@ -96,8 +121,8 @@ function ContactComponent() {
                 rows="6"
                 placeholder="Enter Your Message"
               ></textarea>
-              <span id="msg"></span>
-              <button type="submit" className="more-btn btn2">
+              {resMsg && (<span id="msg" style={{ color: resMsgClr}}>{resMsg}</span>)}
+              <button type="button" onClick={handleSubmit} className="more-btn btn2">
                 Submit
               </button>
             </form>
