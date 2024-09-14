@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ResumePDF from "../assets/Nitesh_Software_Dev.pdf";
 
 function ContactComponent() {
   const [resMsg, setResMsg] = useState('');
@@ -95,7 +96,7 @@ function ContactComponent() {
               </a>
             </div>
             <a
-              href="Nitesh_Software_Engineer.pdf"
+              href={ResumePDF}
               download
               className="more-btn btn2"
             >
