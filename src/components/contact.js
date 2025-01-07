@@ -2,30 +2,44 @@ import React, { useState } from "react";
 import ResumePDF from "../assets/Nitesh_Software_Dev.pdf";
 
 function ContactComponent() {
-  const [resMsg, setResMsg] = useState('');
-  const [resMsgClr, setResMsgClr] = useState('');
+  const [resMsg, setResMsg] = useState("");
+  const [resMsgClr, setResMsgClr] = useState("");
+
+  const resumeURL =
+    "https://www.overleaf.com/download/project/5c43268e45b91847469e5a7d/build/19441b2f40f-ee328c8b03797c0e/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-n2d-c-f-kd9c&enable_pdf_caching=true&popupDownload=true";
+
+  const handleDownload = () => {
+    // Simulate a click on an anchor element to trigger the download
+    const link = document.createElement("a");
+    link.href = resumeURL;
+    link.download = "Nitesh Rathod Resume.pdf"; // This is the file name to save as
+    link.click();
+  };
 
   const handleSubmit = async () => {
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbzMJxEdpNVXE6OO0SRV1qmZNLglxuCrhiS8HrQ4jJwWXnkpdN4dxDKWJ3trjz94tSrjpA/exec';
-    const form = document.forms['submit-to-google-sheet'];
+    const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzMJxEdpNVXE6OO0SRV1qmZNLglxuCrhiS8HrQ4jJwWXnkpdN4dxDKWJ3trjz94tSrjpA/exec";
+    const form = document.forms["submit-to-google-sheet"];
 
-    await fetch(scriptURL, {method: 'POST', body: new FormData(form)})
-        .then(response => {
-          setResMsgClr('#61b752');
-          setResMsg("Message sent successfully..! Thank you for contacting me..!")
-          setTimeout(() => {
-            setResMsg("")
-          }, 5000)
-          form.reset()
-        })
-        .catch(error => {
-          setResMsgClr('#ff004f');
-          setResMsg("Something went wrong try again later..!")
-          setTimeout(() => {
-            setResMsg("")
-          }, 5000)
-        })
-  }
+    await fetch(scriptURL, { method: "POST", body: new FormData(form) })
+      .then((response) => {
+        setResMsgClr("#61b752");
+        setResMsg(
+          "Message sent successfully..! Thank you for contacting me..!"
+        );
+        setTimeout(() => {
+          setResMsg("");
+        }, 5000);
+        form.reset();
+      })
+      .catch((error) => {
+        setResMsgClr("#ff004f");
+        setResMsg("Something went wrong try again later..!");
+        setTimeout(() => {
+          setResMsg("");
+        }, 5000);
+      });
+  };
 
   return (
     <div id="contact">
@@ -102,6 +116,9 @@ function ContactComponent() {
             >
               Download CV
             </a>
+            {/* <button onClick={handleDownload} className="more-btn btn2">
+              Download CV <i className="fa-solid fa-cloud-arrow-down"></i>
+            </button> */}
           </div>
           <div className="contact-rigth">
             <form name="submit-to-google-sheet">
@@ -122,8 +139,16 @@ function ContactComponent() {
                 rows="6"
                 placeholder="Enter Your Message"
               ></textarea>
-              {resMsg && (<span id="msg" style={{ color: resMsgClr}}>{resMsg}</span>)}
-              <button type="button" onClick={handleSubmit} className="more-btn btn2">
+              {resMsg && (
+                <span id="msg" style={{ color: resMsgClr }}>
+                  {resMsg}
+                </span>
+              )}
+              <button
+                type="button"
+                onClick={handleSubmit}
+                className="more-btn btn2"
+              >
                 Submit
               </button>
             </form>

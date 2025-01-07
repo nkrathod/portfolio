@@ -325,6 +325,7 @@ nav ul li a:hover::after{
 .more-btn.btn2{
   display: inline-block;
   background: #ff004f;
+  font-size: medium;
 }
 .contact-rigth form{
   width: 100%;
