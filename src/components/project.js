@@ -62,7 +62,7 @@ function ProjectComponent() {
                 <div className="layer">
                   <h3>{project.title}</h3>
                   <p>{project.description}</p>
-                  <a href={project.url} target="_blank">
+                  <a href={project.url} target="_blank" rel="noreferrer">
                     <i className="fa-sharp fa-solid fa-up-right-from-square"></i>
                   </a>
                 </div>
