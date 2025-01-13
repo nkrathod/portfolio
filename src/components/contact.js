@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import ResumePDF from "../assets/Nitesh_Software_Dev.pdf";
+import Loader from "./loader";
 
 function ContactComponent() {
   const [resMsg, setResMsg] = useState("");
   const [resMsgClr, setResMsgClr] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const resumeURL =
     "https://www.overleaf.com/download/project/5c43268e45b91847469e5a7d/build/19441b2f40f-ee328c8b03797c0e/output/output.pdf?compileGroup=standard&clsiserverid=clsi-pre-emp-n2d-c-f-kd9c&enable_pdf_caching=true&popupDownload=true";
@@ -17,6 +19,7 @@ function ContactComponent() {
   };
 
   const handleSubmit = async () => {
+    setIsLoading(true)
     const scriptURL =
       "https://script.google.com/macros/s/AKfycbzMJxEdpNVXE6OO0SRV1qmZNLglxuCrhiS8HrQ4jJwWXnkpdN4dxDKWJ3trjz94tSrjpA/exec";
     const form = document.forms["submit-to-google-sheet"];
@@ -27,6 +30,7 @@ function ContactComponent() {
         setResMsg(
           "Message sent successfully..! Thank you for contacting me..!"
         );
+        setIsLoading(false);
         setTimeout(() => {
           setResMsg("");
         }, 5000);
@@ -139,6 +143,7 @@ function ContactComponent() {
                 rows="6"
                 placeholder="Enter Your Message"
               ></textarea>
+              {isLoading && (<Loader />)}
               {resMsg && (
                 <span id="msg" style={{ color: resMsgClr }}>
                   {resMsg}

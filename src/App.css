@@ -330,6 +330,7 @@ nav ul li a:hover::after{
 }
 .contact-rigth form{
   width: 100%;
+  position: relative;
 }
 form input, form textarea{
   width: 100%;
