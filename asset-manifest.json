@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d3d289b7.css",
-    "main.js": "/portfolio/static/js/main.a06ecbb7.js",
+    "main.css": "/portfolio/static/css/main.1d4489b4.css",
+    "main.js": "/portfolio/static/js/main.cb11112b.js",
     "static/js/787.7da95b79.chunk.js": "/portfolio/static/js/787.7da95b79.chunk.js",
     "static/media/nkrMobile.png": "/portfolio/static/media/nkrMobile.7be6742a3dff4d9d65e6.png",
     "static/media/sitbg1.png": "/portfolio/static/media/sitbg1.4587e4cf44c3bb4ff321.png",
@@ -10,14 +10,15 @@
     "static/media/ProfilePic.JPG": "/portfolio/static/media/ProfilePic.418f5e0d68d060715724.JPG",
     "static/media/WealthyAffiliate.webp": "/portfolio/static/media/WealthyAffiliate.262bfc08993e87dea515.webp",
     "static/media/sparklebox.jpg": "/portfolio/static/media/sparklebox.0d0b302fd3babc54c58b.jpg",
+    "static/media/icon.png": "/portfolio/static/media/icon.44da1929d2da3a52b8d9.png",
     "static/media/aol.webp": "/portfolio/static/media/aol.332e09d51a5267764841.webp",
     "index.html": "/portfolio/index.html",
-    "main.d3d289b7.css.map": "/portfolio/static/css/main.d3d289b7.css.map",
-    "main.a06ecbb7.js.map": "/portfolio/static/js/main.a06ecbb7.js.map",
+    "main.1d4489b4.css.map": "/portfolio/static/css/main.1d4489b4.css.map",
+    "main.cb11112b.js.map": "/portfolio/static/js/main.cb11112b.js.map",
     "787.7da95b79.chunk.js.map": "/portfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d3d289b7.css",
-    "static/js/main.a06ecbb7.js"
+    "static/css/main.1d4489b4.css",
+    "static/js/main.cb11112b.js"
   ]
 }
