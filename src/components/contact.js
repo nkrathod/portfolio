@@ -154,7 +154,7 @@ function ContactComponent() {
                 onClick={handleSubmit}
                 className="more-btn btn2"
               >
-                Submit
+                {isLoading ? 'Loading ...' : 'Submit'}
               </button>
             </form>
           </div>
