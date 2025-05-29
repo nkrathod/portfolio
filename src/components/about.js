@@ -26,7 +26,7 @@ function AboutComponent() {
               About <span>Me</span>
             </h1>
             <p>
-              I am Nitesh Rathod. I have 4+ years of experience in Web
+              I am Nitesh Rathod. I have 6+ years of experience in Web
               development using React, Redux, JavaScript, TypeScript, Node JS,
               Express JS, MongoDB, Material UI, Bootstrap, Git and AWS. I have
               worked in different domains such as Retail, Ecommerce, EdTech,
